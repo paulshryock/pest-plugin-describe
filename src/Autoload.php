@@ -2,17 +2,17 @@
 
 declare(strict_types=1);
 
-namespace Pest\PluginName;
+namespace Pest\Describe;
 
 use Pest\Plugin;
 use PHPUnit\Framework\TestCase;
 
-Plugin::uses(Example::class);
+Plugin::uses(Describe::class);
 
 /**
  * @return TestCase
  */
-function example(string $argument)
+function describe(string $argument)
 {
-    return test()->example(...func_get_args()); // @phpstan-ignore-line
+    return test()->describe(...func_get_args()); // @phpstan-ignore-line
 }
