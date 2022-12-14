@@ -1,6 +1,6 @@
 {
-    "name": "pestphp/pest-plugin-template",
-    "description": "My awesome plugin",
+    "name": "pestphp/pest-plugin-describe",
+    "description": "Pest plugin to add describe",
     "keywords": [
         "php",
         "framework",
@@ -8,7 +8,8 @@
         "unit",
         "test",
         "testing",
-        "plugin"
+        "plugin",
+        "describe"
     ],
     "license": "MIT",
     "require": {
@@ -18,7 +19,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Pest\\PluginName\\": "src/"
+            "Pest\\Describe\\": "src/"
         },
         "files": [
             "src/Autoload.php"
