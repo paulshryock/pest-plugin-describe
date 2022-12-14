@@ -2,19 +2,19 @@
 
 declare(strict_types=1);
 
-namespace Pest\PluginName;
+namespace Pest\Describe;
 
 use PHPUnit\Framework\TestCase;
 
 /**
  * @internal
  */
-trait Example
+trait Describe
 {
     /**
-     * Example description.
+     * Describe description.
      */
-    public function example(string $name): TestCase
+    public function describe(string $name): TestCase
     {
         $this->assertNotEmpty($name);
 
